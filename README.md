@@ -32,8 +32,8 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
 		-p 5380:8080 \
 		-v /opt/dnsmasq.conf:/etc/dnsmasq.conf \
 		--log-opt "max-size=100m" \
-		-e "HTTP_USER=foo" \
-		-e "HTTP_PASS=bar" \
+		-e "HTTP_USER=admin" \
+		-e "HTTP_PASS=admin" \
 		--restart always \
 		daocloud.io/sunny5156/docker-dnsmasq
 	```
